@@ -37,7 +37,6 @@
 
 
     </style>
-
 </head>
 
 <body>
@@ -63,7 +62,54 @@
     </nav>
 
     <div class="row pad">
-      <div class="col-md-12 col-sm-6 text-center">
-        
+      <div class="col-md-12 col-sm-6 text-center" id="transaction_div">
+        <h1> I will go full screen on load ! </h1>
       </div>
+      <script>
+      function fun(){
+      if (
+        document.fullscreenEnabled ||
+        document.webkitFullscreenEnabled ||
+        document.mozFullScreenEnabled ||
+        document.msFullscreenEnabled
+        ) {
+          document.getElementById("transaction_div").requestFullscreen();
+          console.log('Okay');
+        }
+      }
+      fun();
+      </script>
     </div>
+    <footer class="footer purple lighten-1 pad">
+        <div class="row margin-fix">
+            <div class="col l6 s12">
+                <h5 class="white-text text-center">Company Bio</h5>
+                <p class="grey-text text-lighten-4 text-center">
+                    Bankbox is a progressive team of individuals constantly striving In practice, a writer can get too caught up in all
+                    the things they have to say and fail to organize it all into bits an ordinary human being would be able to digest. The end result is a huge run-on paragraph that makes it difficult to recall the original point of it, if there was one in the first place. The reader's eyes glaze over and all they see is a wall of text.
+                </p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text text-center">Connect</h5>
+                <ul class="text-center">
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="{% static 'js/parallax.min.js' %}"></script>
+    <script src="{% static 'js/init.js' %}"></script>
+</body>
+</html>
