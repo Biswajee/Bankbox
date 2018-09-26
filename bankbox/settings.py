@@ -25,7 +25,7 @@ SECRET_KEY = 'g(f5angmj3&^=e@+3%-dlb9v@o4eschv4wn&#=)63)4lllbb-6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bankbox.herokuapp.com',
+ALLOWED_HOSTS = ['dtase.herokuapp.com',
                  '127.0.0.1']
 
 
