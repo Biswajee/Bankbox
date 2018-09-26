@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="static/images/fav_icon.png" rel="shortcut icon">
+    <title>Bankbox - Cyber fraud prevention service</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{% static 'css/custom_css.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway|Roboto" rel="stylesheet">
+    <!--@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway|Roboto');-->
+
+
+    <style>
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .margin-fix {
+          margin-bottom: -10px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <ul id="slide-out" class="sidenav">
+        <li><a class="waves-effect" href="#"><i class="material-icons">home</i>Home</a></li>
+        <li><a class="waves-effect" href="#"><i class="material-icons">filter_vintage</i>Try Now</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="waves-effect" href="#"><i class="material-icons">book</i>About us</a></li>
+        <li><a class="waves-effect" href="#"><i class="material-icons">call</i>Contact us</a></li>
+    </ul>
+    <nav class="transparent navbar-fixed-top" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo"><img src="{% static 'images/fav_icon.png' %}" style="height: 60px; width:60px;" /> <span class="logo-text">BankBox</span></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Try Now</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div class="row pad">
+      <div class="col-md-12 col-sm-6 text-center">
+        
+      </div>
+    </div>

@@ -1,1 +1,1 @@
-web: gunicorn bsnkbox.wsgi
+web: gunicorn bankbox.wsgi
