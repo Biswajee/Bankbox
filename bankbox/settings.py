@@ -25,18 +25,21 @@ SECRET_KEY = 'g(f5angmj3&^=e@+3%-dlb9v@o4eschv4wn&#=)63)4lllbb-6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bankbox.herokuapp.com',
+                 '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'app',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'widget_tweaks'
 ]
 
 MIDDLEWARE = [
@@ -116,5 +119,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR,'/static/')
+STATICFILES_DIRS = [
+                      os.path.join(BASE_DIR,'static/css'),
+                      os.path.join(BASE_DIR,'static/images'),
+                      os.path.join(BASE_DIR,'static/js')
+                   ]
